@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="page-container">
-      <div class="header-container">
+      <header class="header-container">
         <div class="odin-logo-container">
           <img class="odin-img" src="imgs/odin-lined.png" />
           <h1 class="header-text">ODIN</h1>
@@ -26,17 +26,64 @@
             <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
           </small>
         </div>
-      </div>
-      <div class="content-container">
-        <div class="main-text">
-          <p>
+      </header>
+      <main class="content-container">
+        <div class="main-text-container padded">
+          <p class="hero-text">
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams. Sign up
-            now to get started.
+            <em>now</em> to get started.
           </p>
-          <p>You know you want to.</p>
+          <p>You <em>know</em> you want to.</p>
         </div>
-      </div>
+
+        <form action="" method="get">
+          <div class="form-container padded">
+            <h2>Let's do this!</h2>
+            <div class="name-row">
+              <div class="first-name input-container">
+                <label for="fname">First Name</label>
+                <input type="text" name="firstName" id="fname" required />
+              </div>
+              <div class="last-name input-container">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lastName" id="lname" required />
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="email input-container">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="phone-number input-container">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
+            </div>
+            <div class="password-row">
+              <div class="password input-container">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div class="password-confirm input-container">
+                <label for="pconfirm">Confirm Password</label>
+                <input
+                  type="password"
+                  name="passwordConfirm"
+                  id="pconfirm"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="btn-container padded">
+            <input class="submit-btn" type="submit" value="Create Account" />
+          </div>
+        </form>
+        <div class="login-container padded">
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </main>
     </div>
   </body>
 </html>
