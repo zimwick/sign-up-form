@@ -113,9 +113,23 @@ h2 {
 }
 
 .form-container input {
+  border: solid 1.5px rgba(204, 204, 204, 0.6);
+  border-radius: 5px;
   width: 240px;
   height: 30px;
   padding: 0 9px;
+}
+
+.form-container input:invalid {
+  border: solid 1.5px red;
+  border-radius: 5px;
+}
+
+.form-container input:focus {
+  border: solid 1.5px rgb(52, 121, 221);
+  box-shadow: 1px 1px 4px 1px rgba(85, 85, 85, 0.5);
+  border-radius: 5px;
+  outline: none;
 }
 
 .password-row {
@@ -137,10 +151,40 @@ label {
 }
 
 .submit-btn {
+  font-size: 18px;
   width: 215px;
   height: 45px;
-  background-color: rgb(88, 108, 74);
+  background-color: #586c4a;
   color: #ffffff;
   border-radius: 10px;
   border: none;
+  margin-bottom: 30px;
+  box-shadow: 0px 6px 7px #ddd;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #667a58;
+  box-shadow: 0px 2px 7px #ddd;
+  cursor: pointer;
+}
+
+.login-container {
+  font-size: 17px;
+}
+
+.login-container a:link,
+.login-container a:visited {
+  color: #586c4a;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.login-container a:hover,
+.login-container a:active {
+  color: #667a58;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
 }
